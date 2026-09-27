@@ -5,11 +5,17 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #04100c;
   color: #ffffff;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* ===== NAVBAR ===== */
@@ -438,6 +444,7 @@ body {
 
 .skills-marquee {
   width: 100%;
+  overflow: hidden;
 }
 
 .skills-track {
