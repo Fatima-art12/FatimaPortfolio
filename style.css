@@ -1232,8 +1232,9 @@ body {
     height: 150px;
   }
 
-  /* ---- ABOUT: side-by-side, scaled down ---- */
+  /* ---- ABOUT: side-by-side, scaled down, orbit icons hidden to avoid text overlap ---- */
   .about {
+    min-height: auto;
     padding: 90px 16px;
   }
 
@@ -1254,34 +1255,25 @@ body {
   }
 
   .orbit-wrapper {
-    width: 140px;
-    height: 140px;
+    width: 110px;
+    height: 110px;
     flex-shrink: 0;
     margin: 0;
   }
 
   .orbit-ring {
-    width: 140px;
-    height: 140px;
+    display: none;
   }
 
   .orbit-icon {
-    width: 24px;
-    height: 24px;
-    transform:
-      rotate(var(--angle))
-      translate(70px)
-      rotate(calc(-1 * var(--angle)));
-  }
-
-  .orbit-icon img {
-    width: 13px;
-    height: 13px;
+    display: none;
   }
 
   .about-photo {
-    width: 85px;
-    height: 85px;
+    position: static;
+    transform: none;
+    width: 110px;
+    height: 110px;
   }
 
   .about-text {
@@ -1307,13 +1299,24 @@ body {
     font-size: 0.75rem;
   }
 
-  /* ---- SKILLS ---- */
+  /* ---- SKILLS: remove min-height:100vh so it doesn't leave huge empty gaps ---- */
+  .skills {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
   .skills-inner {
     padding: 0 20px;
   }
 
+  .skill-card {
+    min-width: 110px;
+    padding: 14px 16px;
+  }
+
   /* ---- PROJECTS ---- */
   .projects {
+    min-height: auto;
     padding: 90px 0 40px 0;
   }
 
