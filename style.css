@@ -40,7 +40,7 @@ body {
 }
 
 .nav-logo span {
-  color: #f2c94c;
+  color: #40e0d0;
 }
 
 .nav-links {
@@ -62,16 +62,16 @@ body {
 
 .nav-contact-btn {
   padding: 8px 22px;
-  border: 1px solid #f2c94c;
+  border: 1px solid #40e0d0;
   border-radius: 30px;
-  color: #f2c94c;
+  color: #40e0d0;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .nav-contact-btn:hover {
-  background: #f2c94c;
+  background: #40e0d0;
   color: #04100c;
 }
 
@@ -994,8 +994,8 @@ body {
 .resume-download-btn {
   display: inline-block;
   margin-top: 35px;
-  background: #f5c518;
-  color: #000;
+  background: linear-gradient(90deg, #2ee6a8, #1fae82);
+  color: #04140f;
   font-weight: 700;
   padding: 14px 34px;
   border-radius: 30px;
@@ -1005,7 +1005,7 @@ body {
 
 .resume-download-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(245, 197, 24, 0.35);
+  box-shadow: 0 8px 20px rgba(46, 230, 168, 0.3);
 }
 
 /* Contact Section */
